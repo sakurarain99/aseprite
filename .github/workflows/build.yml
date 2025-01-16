@@ -61,6 +61,7 @@ jobs:
           export enable_ccache=on
         fi
         curl -L https://github.com/blueloveTH/aseprite/releases/download/v0.01/skia.zip --output skia.zip
+        curl -L https://github.com/blueloveTH/aseprite/releases/download/v0.01/libcrypto-1_1-x64.dll --output libcrypto-1_1-x64.dll
         7z x skia.zip
         cmake -S . -B build -G Ninja \
           -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} \
@@ -106,5 +107,5 @@ jobs:
       with:
         name: aseprite
         path: |
-          D:/a/aseprite/aseprite/build/bin/data
-          D:/a/aseprite/aseprite/build/bin/aseprite.exe
+          D:/sakurarain99/aseprite/build/bin/data
+          D:/sakurarain99/aseprite/build/bin/aseprite.exe
