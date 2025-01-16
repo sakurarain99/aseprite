@@ -8,11 +8,11 @@ jobs:
       matrix:
         os: [windows-latest]
         build_type: [Release]
-        ui: [on]
+        enable_ui: [on]
         include:
           - os: windows-latest
             build_type: Release
-            ui: on
+            enable_ui: on
     steps:
     - uses: actions/checkout@v4
       with:
@@ -47,5 +47,5 @@ jobs:
       with:
         name: aseprite
         path: |
-          D:/sakurarain99/aseprite/build/bin/data
-          D:/sakurarain99/aseprite/build/bin/aseprite.exe
+          D:/a/aseprite/aseprite/build/bin/data
+          D:/a/aseprite/aseprite/build/bin/aseprite.exe
